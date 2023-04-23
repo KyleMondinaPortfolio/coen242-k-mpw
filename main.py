@@ -1,5 +1,7 @@
 import sys
 from extract_words import extract_words
+from kalgo1 import kalgo1
+from kalgo2 import kalgo2
 
 # Get the file path from the command line argument
 if len(sys.argv) > 1:
@@ -8,9 +10,15 @@ else:
     print("Please provide a file path as an argument.")
     sys.exit()
 
-filtered_words = extract_words(file_path)
-print(filtered_words)
+words = extract_words(file_path)
+
+algo1_most_common = kalgo1(words,1)
+algo2_most_common = kalgo2(words,1)
+
+print(algo1_most_common)
+print(algo2_most_common)
+
 
 with open('filtered_words.txt', 'w') as f:
     # Write each word to a new line in the file
-    f.write('\n'.join(filtered_words))
+    f.write('\n'.join(words))

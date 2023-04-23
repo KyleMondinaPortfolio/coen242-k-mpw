@@ -1,0 +1,21 @@
+# Using a dictionary with the word as the key and its occurence as the value
+
+def kalgo1(words,k):
+
+    # Create a dictionary of all unique words in the dataset with their frequency count
+    word_count = {}
+
+    for word in words:
+        if word in word_count:
+            word_count[word] += 1
+        else:
+            word_count[word] = 1
+
+    # Find the K-most common word:
+    sorted_words = sorted(word_count.items(), key=lambda x: x[1], reverse=True)
+    k_most_common = sorted_words[:k]
+
+    return k_most_common
+
+    
+
