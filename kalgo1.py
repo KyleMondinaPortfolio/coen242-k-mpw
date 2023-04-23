@@ -1,4 +1,4 @@
-# Using a dictionary with the word as the key and its occurence as the value
+# Find k most common word using a dictionary with the word as the key and its occurence as the value
 
 def kalgo1(words,k):
 

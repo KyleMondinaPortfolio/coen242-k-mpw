@@ -11,12 +11,14 @@ else:
     print("Please provide a file path as an argument.")
     sys.exit()
 
+# Extract word list from dataset file
 words = extract_words(file_path)
 
-print("algorithm 1 performance:")
+print("Algorithm 1 performance: ")
 performance_test(kalgo1,words,1)
 
-print("algorithm 2 performance:")
+
+print("Algorithm 2 performance: ")
 performance_test(kalgo2,words,1)
 
 

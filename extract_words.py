@@ -1,3 +1,5 @@
+# Preprocess dataset file into a list of words without stop words
+
 import re
 def extract_words(file_path):
     # Open the text file

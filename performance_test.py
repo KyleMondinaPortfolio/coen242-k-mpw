@@ -1,3 +1,5 @@
+# Measure the runtime, speedup, CPU utilization, and memory usage of a given algorithm
+
 import time
 import psutil
 import os
@@ -26,5 +28,6 @@ def performance_test(func, *args, **kwargs):
     print(f"Runtime: {runtime:.6f} seconds")
     print(f"CPU utilization: {cpu_end - cpu_start:.2f}%")
     print(f"Memory usage: {(mem_end - mem_start) / 1024 / 1024:.2f} MB")
+    print("\n")
 
     return result

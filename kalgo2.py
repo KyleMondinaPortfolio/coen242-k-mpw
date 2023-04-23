@@ -1,4 +1,4 @@
-# Using a max heap of tuples where the first element is the negative count of each word
+# Find k most common word using a max heap of tuples where the first element is the negative count of each word
 
 import heapq
 from collections import Counter
