@@ -18,6 +18,3 @@ performance_test(kalgo1,words,1)
 
 print("algorithm 2 performance:")
 performance_test(kalgo2,words,1)
-
-
-
