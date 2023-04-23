@@ -14,6 +14,7 @@ def kalgo1(words,k):
     # Find the K-most common word:
     sorted_words = sorted(word_count.items(), key=lambda x: x[1], reverse=True)
     k_most_common = sorted_words[:k]
+    print(f"{k}th most common word: {k_most_common}")
 
     return k_most_common
 
