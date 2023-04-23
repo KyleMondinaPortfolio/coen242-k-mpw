@@ -2,6 +2,7 @@ import sys
 from extract_words import extract_words
 from kalgo1 import kalgo1
 from kalgo2 import kalgo2
+from performance_test import performance_test
 
 # Get the file path from the command line argument
 if len(sys.argv) > 1:
@@ -12,9 +13,11 @@ else:
 
 words = extract_words(file_path)
 
-algo1_most_common = kalgo1(words,1)
-algo2_most_common = kalgo2(words,1)
+print("algorithm 1 performance:")
+performance_test(kalgo1,words,1)
 
-print(algo1_most_common)
-print(algo2_most_common)
+print("algorithm 2 performance:")
+performance_test(kalgo2,words,1)
+
+
 
