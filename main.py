@@ -16,11 +16,12 @@ words = extract_words(file_path)
 
 
 print("Algorithm 1 performance: ")
-#performance_test(kalgo1,words,1)
-
+performance_test(kalgo1,words,1)
 
 print("Algorithm 2 performance: ")
 performance_test(kalgo2,words,1)
+
+
 
 
 
