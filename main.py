@@ -18,7 +18,3 @@ algo2_most_common = kalgo2(words,1)
 print(algo1_most_common)
 print(algo2_most_common)
 
-
-with open('filtered_words.txt', 'w') as f:
-    # Write each word to a new line in the file
-    f.write('\n'.join(words))
