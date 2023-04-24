@@ -7,7 +7,7 @@ import os
 def performance_test(func, *args, **kwargs):
     # Get the CPU usage before executing the function
     process = psutil.Process(os.getpid())
-    cpu_start = process.cpu_percent(interval = 0.1)
+    cpu_start = process.cpu_percent()
 
     # Get the memory usage before executing the function
     mem_start = process.memory_info().rss
@@ -19,7 +19,7 @@ def performance_test(func, *args, **kwargs):
     runtime = end_time - start_time
 
     # Get the CPU usage after executing the function
-    cpu_end = process.cpu_percent(interval = 0.1)
+    cpu_end = process.cpu_percent()
 
     # Get the memory usage after executing the function
     mem_end = process.memory_info().rss
